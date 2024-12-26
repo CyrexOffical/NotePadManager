@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:id="@+id/tvLogin_Title1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="74dp"
+        android:fontFamily="@font/semibolditalic"
+        android:text="NotePad Manager"
+        android:textColor="@color/white"
+        android:textSize="39sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvLogin_Title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/semibolditalic"
+        android:text="Login Your Account !"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLogin_Title1" />
+
+    <EditText
+        android:id="@+id/etLogin_Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/edittextarkaplan"
+        android:drawableLeft="@drawable/email"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="Write Email Adress"
+        android:inputType="text"
+        android:padding="10dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLogin_Title2" />
+
+    <EditText
+        android:id="@+id/etLogin_Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edittextarkaplan"
+        android:drawableLeft="@drawable/key"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="text"
+        android:padding="10dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/etLogin_Email"
+        app:layout_constraintTop_toBottomOf="@+id/etLogin_Email" />
+
+    <Button
+        android:id="@+id/btnLogin_ConfirmLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="17dp"
+        android:background="@drawable/buttonarkaplan"
+        android:paddingLeft="45dp"
+        android:paddingRight="45dp"
+        android:text="Confirm Login"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/etLogin_Password"
+        app:layout_constraintTop_toBottomOf="@+id/etLogin_Password" />
+
+    <TextView
+        android:id="@+id/tvLogin_NotRegistered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="52dp"
+        android:text="You didnt have a account ? Please, click on me!"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin_ConfirmLogin" />
+
+    <TextView
+        android:id="@+id/tvLogin_Version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/bold"
+        android:text="Version 1.0"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

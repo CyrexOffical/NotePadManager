@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:id="@+id/tvRegister_Title1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="74dp"
+        android:fontFamily="@font/semibolditalic"
+        android:text="NotePad Manager"
+        android:textColor="@color/white"
+        android:textSize="39sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvRegister_Title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/semibolditalic"
+        android:text="Create a New Account !"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvRegister_Title1" />
+
+    <EditText
+        android:id="@+id/etRegister_Fullname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/edittextarkaplan"
+        android:drawableLeft="@drawable/account"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="Full Name"
+        android:inputType="text"
+        android:padding="10dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvRegister_Title2" />
+
+    <EditText
+        android:id="@+id/etRegister_PasswordAgain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edittextarkaplan"
+        android:drawableLeft="@drawable/key"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="Password Again"
+        android:inputType="text"
+        android:padding="10dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/etRegister_Password"
+        app:layout_constraintTop_toBottomOf="@+id/etRegister_Password" />
+
+    <Button
+        android:id="@+id/btnRegister_ConfirmRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/buttonarkaplan"
+        android:paddingLeft="45dp"
+        android:paddingRight="45dp"
+        android:text="Confirm Register"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="@+id/etRegister_PasswordAgain"
+        app:layout_constraintTop_toBottomOf="@+id/etRegister_PasswordAgain" />
+
+    <EditText
+        android:id="@+id/etRegister_Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edittextarkaplan"
+        android:drawableLeft="@drawable/email"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="Write Email Adress"
+        android:inputType="text"
+        android:padding="10dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/etRegister_Fullname"
+        app:layout_constraintTop_toBottomOf="@+id/etRegister_Fullname" />
+
+    <EditText
+        android:id="@+id/etRegister_Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edittextarkaplan"
+        android:drawableLeft="@drawable/key"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="8-20 Password"
+        android:inputType="text"
+        android:padding="10dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/etRegister_Email"
+        app:layout_constraintTop_toBottomOf="@+id/etRegister_Email" />
+
+    <TextView
+        android:id="@+id/tvRegister_AlreadyRegistered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginBottom="65dp"
+        android:text="Already you have a account ? Please, click on me!"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvRegister_Version"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRegister_ConfirmRegister" />
+
+    <TextView
+        android:id="@+id/tvRegister_Version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/bold"
+        android:text="Version 1.0"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

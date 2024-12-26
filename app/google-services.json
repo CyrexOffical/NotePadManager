@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "582962152121",
+    "project_id": "notepadmanager-39e76",
+    "storage_bucket": "notepadmanager-39e76.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:582962152121:android:bd29c9ec83ec407433d168",
+        "android_client_info": {
+          "package_name": "com.example.notepadmanager"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBPIf_kPk9egIPDK20p0FRKQZZPJa3aDw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
